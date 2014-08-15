@@ -1,4 +1,4 @@
-params-checker
+groovy-params-checker
 ==============
 
 Automatic Groovy parameter checker.
