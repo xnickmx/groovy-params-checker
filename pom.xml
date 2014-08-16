@@ -196,7 +196,6 @@
                         <configuration>
                             <files>
                                 <file>${user.home}/gpgpassphrase.properties</file>
-                                <file>${user.home}/libs-release-local.properties</file>
                             </files>
                         </configuration>
                     </execution>
@@ -231,40 +230,6 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
-    <profiles>
-        <profile>
-            <!-- used for deploying to the local, internal repo -->
-            <id>libs-release-local</id>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-                <property>
-                    <name>deploy</name>
-                    <value>local</value>
-                </property>
-            </activation>
-            <properties>
-                <repo-id>${libs-release-local.id}</repo-id>
-                <repo-name>${libs-release-local.name}</repo-name>
-                <repo-url>${libs-release-local.url}</repo-url>
-            </properties>
-        </profile>
-        <profile>
-            <!-- used for deploying to Maven Central -->
-            <id>maven-central</id>
-            <activation>
-                <property>
-                    <name>deploy</name>
-                    <value>maven-central</value>
-                </property>
-            </activation>
-            <properties>
-                <repo-id>sonatype-nexus-staging</repo-id>
-                <repo-name>Sonatype Nexus release repository</repo-name>
-                <repo-url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</repo-url>
-            </properties>
-        </profile>
-    </profiles>
 
     <distributionManagement>
         <repository>
