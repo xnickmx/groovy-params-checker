@@ -24,11 +24,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="ParamsChecker" />
-        <module name="ParamsCheckerCodeNarcPlugin" />
-        <module name="ParamsCheckerCodeNarcRule" />
-        <module name="preconditions" />
-        <module name="TestParamsCheckerCodeNarcRule" />
+        <module name="GroovyParamsChecker" />
       </profile>
     </annotationProcessing>
   </component>
@@ -83,9 +79,6 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/../ParamsCheckerCodeNarcPlugin/pom.xml" />
-        <option value="$PROJECT_DIR$/../ParamsCheckerCodeNarcRule/pom.xml" />
-        <option value="$PROJECT_DIR$/../TestParamsCheckerCodeNarcRule/pom.xml" />
       </list>
     </option>
   </component>
@@ -216,7 +209,7 @@
   </component>
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ParamsChecker.iml" filepath="$PROJECT_DIR$/ParamsChecker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GroovyParamsChecker.iml" filepath="$PROJECT_DIR$/GroovyParamsChecker.iml" />
     </modules>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_5" assert-keyword="true" jdk-15="true" project-jdk-name="$project_jdk_name$" project-jdk-type="JavaSDK">

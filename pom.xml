@@ -28,8 +28,9 @@
 
     <groupId>com.faceture</groupId>
     <artifactId>groovy-params-checker</artifactId>
-    <!-- Note: this is not the real version number. The real version number is set by the Jenkins build. MVN requires
-    that a version number ve provided, so this is just a placeholder. -->
+    <!-- Note: if you are looking at this in Git, then this is not the real version number. The real version
+    number is set by the Jenkins build. MVN requires that a version number be provided, so this is just a placeholder.
+    If you are looking at this in a release branch or a compiled artifact, this version number is correct. -->
     <version>1.0.0</version>
     <packaging>jar</packaging>
     <name>GroovyParamsChecker</name>
